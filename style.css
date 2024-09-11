@@ -15,21 +15,26 @@
 }
 body{
     font-family: "Sora", system-ui;
-    max-width: 1136px;
+    min-width: 641px;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: var(--smooke);
 }
 main{
     display: flex;
     justify-content: space-around;
+    width: 1280px;
+    gap: 30px;
+    height: auto;
 
     .inform{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: self-start;
+        align-items: baseline;
+        width: 640px;
 
         .icon{
             background-color: var(--yelow);
@@ -38,18 +43,18 @@ main{
             border-radius: 50%;
         }
         h1{
-            margin-left: 10px;
-            padding: 16px 0px 1px 0px;
+            padding: 16px 0px 12px 0px;
             font-size: 36px;
             color: var(--black);
         }
         h3{
-            padding: 0px 0px 32px 10px;
+            padding: 0px 0px 32px 0;
             color: var(--darkGray);
-            font-size: 1rem;
+            font-size: 20px;
+            line-height: 35px;
+            width: 560px;
         }
         ul{
-            padding-left: 16px;
             list-style: none;
             display: flex;
             flex-direction: column;
@@ -65,8 +70,136 @@ main{
             }
         }
     }
-    & .react{
+    .reacts{
         display: flex;
+        width: 500px;
+        height: 550px;
+        position: relative;
+        
+        ul{
+            display: flex;
+            flex-direction: column;
+            list-style: none;
+            justify-content: center
+            ;
 
+            .google{
+                display: flex;
+                flex-direction: column;
+                width: 360px;
+                height: 200px;
+                background-color: var(--white);
+                border-radius: 28px;
+                position: absolute;
+                top: 55px;
+                right: 0;
+
+                .images{
+                    display: flex;
+                    padding: 28px 40px;
+
+                    .marca{
+                        width: 120px;
+                        height: 40px;
+                        margin-right: 20px;
+                    }
+                    .stars{
+                        display: flex;
+                        gap: 4px;
+                    }
+                }
+                .escrita{
+                    padding: 0px 40px 28px 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    gap: 8px;
+
+                    h4{
+                        color: var(--black);
+                        font-size: 1rem;
+                    }
+                    p{
+                        line-height: 25px;
+                        color: var(--darkGray);
+                    }
+                }
+            }
+            .meta{
+                display: flex;
+                flex-direction: column;
+                width: 360px;
+                height: 200px;
+                background-color: var(--white);
+                border-radius: 28px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+
+                .images{
+                    display: flex;
+                    padding: 28px 40px;
+
+                    .marca{
+                        width: 120px;
+                        height: 40px;
+                        margin-right: 20px;
+                    }
+                    .stars{
+                        display: flex;
+                        gap: 4px;
+                    }
+                }
+                .escrita{
+                    padding: 0px 40px 28px 40px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    gap: 8px;
+
+                    h4{
+                        color: var(--black);
+                        font-size: 1rem;
+                    }
+                    p{
+                        line-height: 25px;
+                        color: var(--darkGray);
+                    }
+                }
+            }
+        }
+
+    }
+}
+@media only screen and (max-width: 640px){
+    body{
+        height: auto;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 600px;
+        padding: 20px 0px 0px 0px;
+        
+        .inform{
+            width: 580px;
+            h3{
+                max-width: 550px;
+            }
+        }
+        
+        .reacts{
+            height: 500px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+
+            .google{
+                margin-top: -55px;
+            }
+            .meta{
+                margin-bottom: 55px;
+            }
+        }
     }
 }
