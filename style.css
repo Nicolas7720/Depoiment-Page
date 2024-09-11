@@ -29,61 +29,61 @@ main{
     gap: 30px;
     height: auto;
 
-    .inform{
+    & .inform{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: baseline;
         width: 640px;
 
-        .icon{
+        & .icon{
             background-color: var(--yelow);
             padding: 16px;
             margin-left: 10px;
             border-radius: 50%;
         }
-        h1{
+        & h1{
             padding: 16px 0px 12px 0px;
             font-size: 36px;
             color: var(--black);
         }
-        h3{
+        & h3{
             padding: 0px 0px 32px 0;
             color: var(--darkGray);
             font-size: 20px;
             line-height: 35px;
             width: 560px;
         }
-        ul{
+        & ul{
             list-style: none;
             display: flex;
             flex-direction: column;
             gap: 12px;
 
-            li{
+            & li{
                 display: flex;
                 gap: 8px;
 
-                p{
+                & p{
                     font-size: 14px;
                 }
             }
         }
     }
-    .reacts{
+    & .reacts{
         display: flex;
         width: 500px;
         height: 550px;
         position: relative;
         
-        ul{
+        & ul{
             display: flex;
             flex-direction: column;
             list-style: none;
             justify-content: center
             ;
 
-            .google{
+            & .google{
                 display: flex;
                 flex-direction: column;
                 width: 360px;
@@ -94,38 +94,38 @@ main{
                 top: 55px;
                 right: 0;
 
-                .images{
+                & .images{
                     display: flex;
                     padding: 28px 40px;
 
-                    .marca{
+                    & .marca{
                         width: 120px;
                         height: 40px;
                         margin-right: 20px;
                     }
-                    .stars{
+                    & .stars{
                         display: flex;
                         gap: 4px;
                     }
                 }
-                .escrita{
+                & .escrita{
                     padding: 0px 40px 28px 40px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
                     gap: 8px;
 
-                    h4{
+                    & h4{
                         color: var(--black);
                         font-size: 1rem;
                     }
-                    p{
+                    & p{
                         line-height: 25px;
                         color: var(--darkGray);
                     }
                 }
             }
-            .meta{
+            & .meta{
                 display: flex;
                 flex-direction: column;
                 width: 360px;
@@ -136,32 +136,32 @@ main{
                 bottom: 0;
                 left: 0;
 
-                .images{
+                & .images{
                     display: flex;
                     padding: 28px 40px;
 
-                    .marca{
+                    & .marca{
                         width: 120px;
                         height: 40px;
                         margin-right: 20px;
                     }
-                    .stars{
+                    & .stars{
                         display: flex;
                         gap: 4px;
                     }
                 }
-                .escrita{
+                & .escrita{
                     padding: 0px 40px 28px 40px;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
                     gap: 8px;
 
-                    h4{
+                    & h4{
                         color: var(--black);
                         font-size: 1rem;
                     }
-                    p{
+                    & p{
                         line-height: 25px;
                         color: var(--darkGray);
                     }
@@ -181,23 +181,23 @@ main{
         width: 600px;
         padding: 20px 0px 0px 0px;
         
-        .inform{
+        & .inform{
             width: 580px;
-            h3{
+            & h3{
                 max-width: 550px;
             }
         }
         
-        .reacts{
+        & .reacts{
             height: 500px;
             width: 90%;
             display: flex;
             flex-direction: column;
 
-            .google{
+            & .google{
                 margin-top: -55px;
             }
-            .meta{
+            & .meta{
                 margin-bottom: 55px;
             }
         }
