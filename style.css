@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --yelow: #F5C044;
+    --green: #4CA154;
+    --black: #18181B;
+    --darkGray: #52525A;
+    --gray: #D4D4D8;
+    --smooke: #FAFAF9;
+    --white: #FFFFFF;
+}
+body{
+    font-family: "Sora", system-ui;
+    max-width: 1136px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+
+    .inform{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: self-start;
+
+        .icon{
+            background-color: var(--yelow);
+            padding: 16px;
+            margin-left: 10px;
+            border-radius: 50%;
+        }
+        h1{
+            margin-left: 10px;
+            padding: 16px 0px 1px 0px;
+            font-size: 36px;
+            color: var(--black);
+        }
+        h3{
+            padding: 0px 0px 32px 10px;
+            color: var(--darkGray);
+            font-size: 1rem;
+        }
+        ul{
+            padding-left: 16px;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            li{
+                display: flex;
+                gap: 8px;
+
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    & .react{
+        display: flex;
+
+    }
+}
